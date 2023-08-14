@@ -1,0 +1,16 @@
+.restaurants {
+    background: #eaeaea;
+}
+
+.footer {
+    background: #101010;
+}
+
+.footer-logo {
+    filter: invert(100%);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
