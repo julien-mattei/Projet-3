@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 767.98px;
+  margin: 0px;
+}
+
+.informations {
+  background: #f6f6f6;
+}
+
+.fonctionnement__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.restaurants__card {
+  width: 96%;
+  height: 250px;
+  border-radius: 25px;
+  background: #FFFFFF;
+}
+.restaurants__txt {
+  text-align: left;
+  padding-left: 15px;
+}
+.restaurants__image {
+  height: 75%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants__title {
+  margin: 0px;
+}
+
+.restaurant__title {
+  font-family: "Shrikhand", cursive;
+}
+
+.footer {
+  background: #353535;
+  padding-left: 25px;
+}
+.footer__logo {
+  padding: 15px 0px;
+  width: 25%;
+  filter: invert(100%);
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
