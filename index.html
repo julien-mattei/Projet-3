@@ -8,45 +8,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="SASS/style.scss">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body><div class="main-container">
-    <header class="header">
-        <img src="Assets/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="" class="header-logo">
-        <div class="header-loc">
+<body>
+    <div class="main-container">
+        <header class="header">
+            <img src="Assets/Ohmyfood/images/logo/ohmyfood.png" alt="" class="header__logo">
+            <div class="header__loc"></div>
+        </header>
+        <main class="main">
+            <section class="informations">
+                <div class="informations__conntent">
+                    <h2 class="informations__title">Reservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                </div>
+                <div class="informations__button">
+                    <button class="informations__btn">Explorer nos restaurants</button>
+                </div>
+            </section>
+            <section class="fonctionnement">
+                <h2 class="fonctionnement__title">Fonctionnement</h2>
+                <div class="fonctionnement__buttons">
+                    <button class="fonctionnement__btn">
+                        <img src="" alt="" class="fonctionnement__image">
+                        Choisissez un restaurant
+                    </button>
+                    <button class="fonctionnement__btn">
+                        <img src="" alt="" class="fonctionnement__image">
+                        Composez votre menu
+                    </button>
+                    <button class="fonctionnement__btn">
+                        <img src="" alt="" class="fonctionnement__image">
+                        Dégustez au restaurant
+                    </button>
+                </div>
+            </section>
+            <section class="restaurants">
+                <h2 class="restaurants__title">Restaurants</h2>
+                <div class="restaurants__cards">
+                    <article class="restaurants__card">
+                        <img src="Assets/Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="restaurants__image">
+                        <div class="restaurants__content">
+                            <div class="restaurants__txt">
+                                <h3 class="restaurants__title">La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="restaurants__iconHeart"></div>
+                        </div>
+                    </article>
+                    <article class="restaurants__card">
+                        <img src="Assets/Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" class="restaurants__image">
+                        <div class="restaurants__content">
+                            <div class="restaurants__txt">
+                                <h3 class="restaurants__title">La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="restaurants__iconHeart"></div>
+                        </div>
+                    </article>
+                    <article class="restaurants__card">
+                        <img src="Assets/Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" class="restaurants__image">
+                        <div class="restaurants__content">
+                            <div class="restaurants__txt">
+                                <h3 class="restaurants__title">À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="restaurants__iconHeart"></div>
+                        </div>
+                    </article>
+                    <article class="restaurants__card">
+                        <img src="Assets/Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="restaurants__image">
+                        <div class="restaurants__content">
+                            <div class="restaurants__txt">
+                                <h3 class="restaurants__title">Le délice des sens</h3>
+                                <p>Folie -Méricourt</p>
+                            </div>
+                            <div class="restaurants__iconHeart"></div>
+                        </div>
+                    </article>
+                </div>
 
-        </div>
-    </header>
-    <main class="main">
-        <section class="informations">
-            <div class="informations-title">
-                <h2>Reservez le menu qui vous convient</h2>
+            </section>
+        </main>
+        <footer class="footer">
+            <img src="Assets/Ohmyfood/images/logo/ohmyfood.png" alt="" class="footer__logo">
+            <div class="footer__links">
+                <a href="#" class="footer__link">Proposer un restaurant</a>
+                <a href="#" class="footer__link">Devenir partenaire</a>
+                <a href="#" class="footer__link">Mentions légales</a>
+                <a href="#" class="footer__link">Contact</a>
             </div>
-
-        </section>
-        <section class="fonctionnement">
-            <div class="fonctionnemnt-title">
-                <h2>Fonctionnement</h2>
-            </div>
-
-        </section>
-        <section class="restaurants">
-            <div class="restaurants-title">
-                <h2>Restaurants</h2>
-            </div>
-
-        </section>
-    </main>
-    <footer class="footer">
-        <img src="Assets/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="" class="footer-logo">
-        <div class="footer-links">
-            <a href="#">Porposer un restaurant</a>
-            <a href="#">Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
     
 </body>
 </html>
