@@ -1,50 +1,76 @@
-body {
-    display: flex;
-    flex-direction: column;
-    max-width: 767.98px;
-    margin: 0px;
+$bgGrey : #f6f6f6;
+
+@mixin font-title {
+    font-family: 'Shrikhand', cursive;
 }
 
-.informations {
-    background: #f6f6f6;
-}
-.fonctionnement {
-   &__buttons {
-        display: flex;
-        flex-direction: column;
-    }
+@mixin font-body {
+    font-family: 'Roboto', sans-serif;
 }
 
-.restaurants {
-    background: #f6f6f6;
+@mixin column-center {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 767.98px;
+    @include font-body();
+}
+
+.header {
+    @include column-center();
+
+    &__loc {
+        background: #eaeaea;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.informations {
+    @include column-center();
+    background: $bgGrey;
+}
+
+.fonctionnement {
+    @include column-center();
+
+    &__rectangles {
+        @include column-center();
+    }
+}
+
+.restaurants {
+    @include column-center();
+    background: $bgGrey;
+    padding: 50px 0;
+    gap: 30px;
 
     &__cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+        @include column-center();
         width: 100%;
     }
     &__card {
         width: 96%;
-        height: 250px;
+        height: 490px;
         border-radius: 25px;
         background: #FFFFFF;
     }
 
     &__txt {
         text-align: left;
-        padding-left: 15px;
     }
 
     &__image {
-        height: 75%;
+        height: 80%;
         width: 100%;
         object-fit: cover;
+        object-position: 50% 100%;
         border-radius: 20px 20px 0 0;
     }
 
@@ -52,12 +78,28 @@ body {
         margin: 0px;
     }
 
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
 
 }
 
 .restaurant {
     &__title {
-        font-family: 'Shrikhand', cursive;
+        @include font-title();
+    }
+}
+
+.picture {
+    
+
+    &__restaurant {
+        object-fit: cover;
+        width: 100%;
     }
 }
 .footer {
