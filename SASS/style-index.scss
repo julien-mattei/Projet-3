@@ -1,0 +1,134 @@
+@import "mixin-variable";
+
+/* Index */
+.header {
+    @include flex-container-column();
+
+    &__logo {
+        @include flex-container-row();
+        gap: 30px;
+        padding: 20px 0;
+        
+        .header__image {
+            width: 170px;
+        }
+    }
+
+    &__location {
+        @include flex-container-row();
+        gap: 8px;
+        padding: 10px 0;
+        background-color: $greybgheader;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.informations {
+    @include flex-container-column();
+    align-items: center;
+    text-align: center;
+    background: #f6f6f6;
+    padding: 0 0 20px;
+
+    p {
+        font-size: 18px;
+    }
+
+    &__button {
+        border-radius: 50px;
+        border: none;
+        color: white;
+        padding: 15px 40px;
+        font-size: 18px;
+        background: linear-gradient(#FF79DA, $purplebgcrircle);
+        box-shadow: 0 4px 15px 0 rgb(0, 0, 0, 0.15);
+    }
+}
+
+.fonctionnement {
+    padding: 30px 15px;
+
+    &__pannels {
+        @include flex-container-column();
+        gap: 30px;
+    }
+
+    &__pannel {
+        @include flex-container-row();
+        @include pannel();
+        justify-content: flex-start;
+        font-weight: bold;
+        position: relative;
+        gap: 20px;
+        padding-left: 30px;
+    }
+    &__icon {
+        color: grey;
+    }
+    &__icon--purple {
+        color: $purplebgcrircle;
+    }
+
+    &__pannel > .circle {
+        @include circle();
+        position: absolute;
+        left: -10px;
+    }
+}
+
+.restaurants {
+    @include flex-container-column();
+    background: #f6f6f6;
+    padding: 30px 15px;
+
+    &__cards {
+        @include flex-container-column();
+        gap: 30px;
+    }
+
+    &__card-new {
+        background: $greenbg;
+        color: $greentxt;
+        width: 90px;
+        position: absolute;
+        top: 20px;
+        left: 600px;
+        text-align: center;
+        padding: 5px 0;
+
+    }
+    &__card {
+        @include flex-container-column();
+        width: 100%;
+        border-radius: 15px;
+        background: #FFFFFF;
+        height: 370px;
+        position: relative;
+
+        p {
+            margin-top: 5px;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+       object-fit: cover;
+       width: 100%;
+       height: 75%;
+       border-radius: 15px 15px 0 0;
+
+    }
+
+    &__card-content {
+        @include flex-container-row();
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+}
+
