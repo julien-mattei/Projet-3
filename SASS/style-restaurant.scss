@@ -20,14 +20,14 @@
         object-fit: cover;
     }
 }
-
+main {
+    position: relative;
+    top: -100px;
+}
 .restaurant {
     background: #f6f6f6;
     border-radius: 50px 50px 0 0;
-    position: relative;
-    top: -100px;
     padding-top: 30px;
-    height: 100%
 }
 
 .informations {
