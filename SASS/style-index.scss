@@ -38,13 +38,7 @@
     }
 
     &__button {
-        border-radius: 50px;
-        border: none;
-        color: white;
-        padding: 15px 40px;
-        font-size: 18px;
-        background: linear-gradient(#FF79DA, $purplebgcrircle);
-        box-shadow: 0 4px 15px 0 rgb(0, 0, 0, 0.15);
+       @include btn();
     }
 }
 
@@ -129,6 +123,24 @@
         @include flex-container-row();
         justify-content: space-between;
         padding: 0 15px;
+    }
+
+    &__card-content-icon {
+        position: relative;
+    }
+
+    .heart-full, .heart-empty {
+        position: absolute;
+        right: -10%;
+    }
+
+    .heart-full {
+        opacity: 0;
+        transition: all 0.7s linear 0s;
+    }
+
+    .heart-full:hover{
+        opacity: 1;
     }
 }
 

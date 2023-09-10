@@ -17,6 +17,9 @@ body {
 .footer {
   background: #353535;
   padding: 30px 0 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .footer__image {
   width: 100px;
@@ -184,4 +187,18 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+}
+.restaurants__card-content-icon {
+  position: relative;
+}
+.restaurants .heart-full, .restaurants .heart-empty {
+  position: absolute;
+  right: -10%;
+}
+.restaurants .heart-full {
+  opacity: 0;
+  transition: all 0.7s linear 0s;
+}
+.restaurants .heart-full:hover {
+  opacity: 1;
 }
