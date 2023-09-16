@@ -59,9 +59,11 @@
         gap: 20px;
         padding-left: 30px;
     }
+
     &__icon {
         color: grey;
     }
+
     &__icon--purple {
         color: $purplebgcrircle;
     }
@@ -87,12 +89,14 @@
         background: $greenbg;
         color: $greentxt;
         width: 90px;
+    }
+
+    &__card > .new {
         position: absolute;
         top: 20px;
         left: 600px;
         text-align: center;
         padding: 5px 0;
-
     }
     &__card {
         @include flex-container-column();

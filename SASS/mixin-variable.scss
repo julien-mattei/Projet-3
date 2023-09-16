@@ -9,6 +9,7 @@ $gradient: linear-gradient(#FF79DA, $purplebgcrircle);
 /* Mixin */
 @mixin flex-container-row {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -66,7 +67,13 @@ body {
 .main-container {
     width: 100%;
     max-width: 767.98px;
+    min-width: 320px;
     font-family: 'Roboto', sans-serif;
+
+    @media (min-width: 768px) {
+        width: 100%;
+        max-width: 2560px;
+    }
 }
 
 .footer {
@@ -74,15 +81,32 @@ body {
     padding: 30px 0 30px 25px;
     @include flex-container-column();
 
+    @media (min-width: 768px) {
+        width: 100%;
+        @include flex-container-row();
+        justify-content: end;
+        gap: 50px;
+    }
+
     &__image {
         width: 100px;
         filter: invert(100%);
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+
+        @media (min-width: 768px) {
+            order: 2;
+            padding-right: 100px;
+        }
+        
     }
     
     &__links {
         @include flex-container-column();
         gap: 10px;
+
+        @media (min-width: 768px) {
+            @include flex-container-row();
+        }
     }
 
     a {
@@ -99,5 +123,4 @@ body {
     &__icon {
         color: #FFFFFF;
     }
-
 }
