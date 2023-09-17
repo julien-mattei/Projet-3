@@ -209,4 +209,8 @@ main {
             width: 25%;
         }
     }
+
+    &__button-btn:active {
+        background: $gradient-light;
+    }
 }

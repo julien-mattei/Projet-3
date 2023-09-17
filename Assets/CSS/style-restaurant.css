@@ -289,7 +289,7 @@ main {
   color: white;
   padding: 15px 40px;
   font-size: 18px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   width: 60%;
 }
@@ -297,4 +297,7 @@ main {
   .restaurant__button-btn {
     width: 25%;
   }
+}
+.restaurant__button-btn:active {
+  background: linear-gradient(180deg, #FF79DA 50%, #9356DC);
 }
