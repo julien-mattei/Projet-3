@@ -3,8 +3,8 @@ $greybgheader: #eaeaea;
 $purplebgcrircle: #9356DC;
 $greenbg: #99e2d0;
 $greentxt: #008756;
-$gradient: linear-gradient(#FF79DA, $purplebgcrircle);
-
+$gradient: linear-gradient(180deg,#FF79DA , $purplebgcrircle);
+$gradient-light: linear-gradient(180deg,#FF79DA 50% ,$purplebgcrircle );
 
 /* Mixin */
 @mixin flex-container-row {

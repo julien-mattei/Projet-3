@@ -40,6 +40,10 @@
     &__button {
        @include btn();
     }
+
+    &__button:active {
+        background: $gradient-light;
+    }
 }
 
 .fonctionnement {
@@ -188,14 +192,28 @@
     .heart-full, .heart-empty {
         position: absolute;
         right: -10%;
+        top: -15px;
+        width: 30px;
+        height: 30px;
     }
 
     .heart-full {
         opacity: 0;
         transition: all 0.7s linear 0s;
+        fill: url(#Gradient);
     }
 
     .heart-full:hover{
         opacity: 1;
+    }
+
+    .stop1 {
+        stop-color: $purplebgcrircle;
+        stop-opacity: 1;
+    }
+    
+    .stop2 {
+        stop-color: #FF79DA;
+        stop-opacity: 1;
     }
 }
