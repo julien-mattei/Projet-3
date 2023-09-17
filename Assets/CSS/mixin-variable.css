@@ -1,6 +1,10 @@
 /* Variables */
 /* Mixin */
 /* General */
+:root {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -10,14 +14,11 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 767.98px;
-  min-width: 320px;
   font-family: "Roboto", sans-serif;
 }
 @media (min-width: 768px) {
   .main-container {
     width: 100%;
-    max-width: 2560px;
   }
 }
 
@@ -37,6 +38,7 @@ body {
     align-items: center;
     justify-content: end;
     gap: 50px;
+    padding-top: 50px;
   }
 }
 .footer__image {

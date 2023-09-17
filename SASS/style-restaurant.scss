@@ -50,7 +50,7 @@ main {
     @include flex-container-column();
     gap: 40px;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
         width: 75%;
     }
 
@@ -75,6 +75,10 @@ main {
         gap: 40px;
 
         @media (min-width:768px) {
+           padding: 0;
+        }
+
+        @media (min-width: 1440px) {
             padding: 0 150px;
         }
 
