@@ -10,11 +10,14 @@ body {
   justify-content: center;
   gap: 20px;
   margin: 0;
+  position: relative;
+  z-index: 3;
 }
 
 .main-container {
   width: 100%;
   font-family: "Roboto", sans-serif;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .main-container {
@@ -77,4 +80,8 @@ body {
 }
 .footer__icon {
   color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
 }

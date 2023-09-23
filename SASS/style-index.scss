@@ -31,7 +31,7 @@
     align-items: center;
     text-align: center;
     background: #f6f6f6;
-    padding: 0 0 20px;
+    padding: 0 20px;
 
     p {
         font-size: 18px;
@@ -39,6 +39,7 @@
 
     &__button {
        @include btn();
+       width: 220px;
     }
 
     &__button:active {
@@ -47,7 +48,7 @@
 }
 
 .fonctionnement {
-    padding: 50px 15px;
+    padding: 50px 20px;
 
     @media (min-width: 1440px) {
         padding: 50px 180px;
@@ -72,7 +73,7 @@
         justify-content: flex-start;
         font-weight: bold;
         position: relative;
-        gap: 20px;
+        gap: 10px;
         padding-left: 30px;
     }
 
@@ -95,6 +96,7 @@
     @include flex-container-column();
     background: #f6f6f6;
     padding: 50px 15px;
+    
 
     @media (min-width: 1440px) {
         padding: 50px 180px;
@@ -131,6 +133,13 @@
         height: 250px;
         position: relative;
 
+        a {
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: black;
+        }
+
         p {
             margin: 0;
             padding-bottom: 10px;
@@ -158,7 +167,7 @@
         }
     }
 
-    &__image {
+    &__image, .image {
        object-fit: cover;
        width: 100%;
        height: 75%;
@@ -215,5 +224,59 @@
     .stop2 {
         stop-color: #FF79DA;
         stop-opacity: 1;
+    }
+}
+
+.loader{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 50%;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 1;
+    animation: opacity-loader 3s both;
+}
+ @keyframes opacity-loader {
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+ }
+.dot {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+}
+
+.dot:nth-child(1){
+    animation: bounce ease-in-out 2s infinite;
+}
+
+.dot:nth-child(2){
+    animation: bounce ease-in-out 2s 0.3s infinite;
+}
+
+.dot:nth-child(3){
+    animation: bounce ease-in-out 2s 0.6s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100%{transform: translateY(0%);}
+    40%,90% {transform: translateY(-50%);}
+}
+
+.main-container {
+    opacity: 0;
+    animation: opacity 1.5s 3.5s forwards;
+}
+
+@keyframes opacity {
+    100% {
+        opacity: 1;
     }
 }

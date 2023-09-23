@@ -14,6 +14,11 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
     <div class="main-container">
         <header class="header">
             <div class="header__logo">
@@ -53,98 +58,106 @@
             <h2>Restaurants</h2>
             <div class="restaurants__cards">
                 <div class="restaurants__card">
-                    <img src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurants__image" alt="">
-                    <div class="restaurants__card-new new">Nouveau</div>
-                    <div class="restaurants__card-content">
-                        <div class="restaurants__card-content-txt">
-                            <h3 class="restaurants__card-content-txt-title">La palette du goût</h3>
-                            <p class="restaurants__card-content-txt-loc">Ménilmontant</p>
+                    <a href="restaurants/restaurant-1.html">
+                        <img src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurants__image" alt="">
+                        <div class="restaurants__card-new new">Nouveau</div>
+                        <div class="restaurants__card-content">
+                            <div class="restaurants__card-content-txt">
+                                <h3 class="restaurants__card-content-txt-title">La palette du goût</h3>
+                                <p class="restaurants__card-content-txt-loc">Ménilmontant</p>
+                            </div>
+                            <div class="restaurants__card-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
+                                    <defs>
+                                        <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="restaurants__card-content-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                              </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
-                                <defs>
-                                    <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
-                                        <stop class="stop1" offset="0%"/>
-                                        <stop class="stop2" offset="100%"/>
-                                    </linearGradient>
-                                </defs>
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                            </svg>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="restaurants__card">
-                    <img src="Assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="restaurants__image" alt="" id="image2">
-                    <div class="restaurants__card-new new">Nouveau</div>
-                    <div class="restaurants__card-content">
-                        <div class="restaurants__card-content-txt">
-                            <h3 class="restaurants__card-content-txt-title">La note enchantée</h3>
-                            <p class="restaurants__card-content-txt-loc">Charonne</p>
+                    <a href="restaurants/restaurant-2.html">
+                        <img src="Assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="restaurants__image" alt="" id="image2">
+                        <div class="restaurants__card-new new">Nouveau</div>
+                        <div class="restaurants__card-content">
+                            <div class="restaurants__card-content-txt">
+                                <h3 class="restaurants__card-content-txt-title">La note enchantée</h3>
+                                <p class="restaurants__card-content-txt-loc">Charonne</p>
+                            </div>
+                            <div class="restaurants__card-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
+                                    <defs>
+                                        <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="restaurants__card-content-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                              </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
-                                <defs>
-                                    <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
-                                        <stop class="stop1" offset="0%"/>
-                                        <stop class="stop2" offset="100%"/>
-                                    </linearGradient>
-                                </defs>
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                            </svg>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="restaurants__card">
-                    <img src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurants__image" alt="">
-                    <div class="restaurants__card-content">
-                        <div class="restaurants__card-content-txt">
-                            <h3 class="restaurants__card-content-txt-title">A la française</h3>
-                            <p class="restaurants__card-content-txt-loc">Cité Rouge</p>
+                    <a href="restaurants/restaurant-3.html">
+                        <img src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurants__image" alt="">
+                        <div class="restaurants__card-content">
+                            <div class="restaurants__card-content-txt">
+                                <h3 class="restaurants__card-content-txt-title">A la française</h3>
+                                <p class="restaurants__card-content-txt-loc">Cité Rouge</p>
+                            </div>
+                            <div class="restaurants__card-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
+                                    <defs>
+                                        <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="restaurants__card-content-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                              </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
-                                <defs>
-                                    <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
-                                        <stop class="stop1" offset="0%"/>
-                                        <stop class="stop2" offset="100%"/>
-                                    </linearGradient>
-                                </defs>
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                            </svg>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="restaurants__card">
-                    <img src="Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="restaurants__image" alt="">
-                    <div class="restaurants__card-content">
-                        <div class="restaurants__card-content-txt">
-                            <h3 class="restaurants__card-content-txt-title">Le délice des sens</h3>
-                            <p class="restaurants__card-content-txt-loc">Folie-Méricourt</p>
+                    <a href="restaurants/restaurant-4.html">
+                        <img src="Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="restaurants__image" alt="">
+                        <div class="restaurants__card-content">
+                            <div class="restaurants__card-content-txt">
+                                <h3 class="restaurants__card-content-txt-title">Le délice des sens</h3>
+                                <p class="restaurants__card-content-txt-loc">Folie-Méricourt</p>
+                            </div>
+                            <div class="restaurants__card-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
+                                    <defs>
+                                        <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="restaurants__card-content-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                              </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
-                                <defs>
-                                    <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
-                                        <stop class="stop1" offset="0%"/>
-                                        <stop class="stop2" offset="100%"/>
-                                    </linearGradient>
-                                </defs>
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                            </svg>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -164,4 +177,5 @@
             </div>
         </footer>
     </div>
+    
 </body>
