@@ -129,7 +129,7 @@ a {
   text-align: center;
   background: #f6f6f6;
   gap: 15px;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 .informations__title {
   margin: 0;
@@ -151,6 +151,7 @@ a {
 }
 .informations__button:active {
   background: linear-gradient(180deg, #FF79DA 50%, #9356DC);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .fonctionnement {
@@ -169,6 +170,7 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  padding-left: 15px;
 }
 @media (min-width: 1440px) {
   .fonctionnement__pannels {
@@ -216,7 +218,7 @@ a {
   flex-direction: column;
   justify-content: center;
   background: #f6f6f6;
-  padding: 50px 15px;
+  padding: 50px 20px;
 }
 @media (min-width: 1440px) {
   .restaurants {

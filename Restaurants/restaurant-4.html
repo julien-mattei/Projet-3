@@ -16,7 +16,9 @@
 <body>
     <div class="main-container">
         <header class="header">
-            <i class="fa-solid fa-arrow-left header__icon"></i>
+            <a href="../index.html" class="header__icon">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
             <img src="../Assets/images/logo/ohmyfood.png" alt="" class="header__logo">
         </header>
         <div class="picture">
@@ -26,7 +28,20 @@
             <div class="restaurant">
                 <div class="restaurant__informations informations">
                     <h2 class="informations__title">Le délices des sens</h2>
-                    <i class="fa-regular fa-heart fa-2xl"></i>
+                    <div class="informations__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-empty" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi heart-full" viewBox="0 0 16 16">
+                            <defs>
+                                <linearGradient id="Gradient" x1="0%" y1="0%" x2="0%" y2="90%">
+                                    <stop class="stop1" offset="0%"/>
+                                    <stop class="stop2" offset="100%"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                    </div>
                 </div>
                 <div class="restaurant__cards">
                     <section class="cards__entrees cards">
@@ -37,10 +52,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Fricassée d'escargots</h4>
+                                    <h4 class="text__title">Tartare de thon</h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt">Au piment d'Espelette </p>
+                                    <p class="text__txt">Assaisonné au yuzu</p>
                                     <p class="price__text">25€</p>
                                 </div>
                             </div>
@@ -51,10 +66,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Foie gras de canard mi-cuit</h4>
+                                    <h4 class="text__title">Bouchée de homard croustillant</h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt">Et ses copeaux de truffe noire</p>
+                                    <p class="text__txt">Et sa farandole de petits légumes</p>
                                     <p class="price__text">35€</p>
                                 </div>
                             </div>
@@ -65,10 +80,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Œuf au plat</h4>
+                                    <h4 class="text__title">Velouté de cèpes</h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt txt">Assaisonné à la truffe sur lit de caviar</p>
+                                    <p class="text__txt txt">Aux truffes</p>
                                     <p class="price__text">20€</p>
                                 </div>
                             </div>
@@ -85,10 +100,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Filet de bœuf aux herbes</h4>
+                                    <h4 class="text__title">Poulet rôti aux herbes de Provence </h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt txt">Accompagné de sa ribambelle de légumes</p>
+                                    <p class="text__txt txt">Et sa crème de truffe</p>
                                     <p class="price__text">40€</p>
                                 </div>
                             </div>
@@ -99,10 +114,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Parmentier de queue de bœuf</h4>
+                                    <h4 class="text__title">Langouste rôtie</h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt txt">À la truffe noire sur sa purée de panais</p>
+                                    <p class="text__txt txt">Et ses légumes de saison</p>
                                     <p class="price__text">35€</p>
                                 </div>
                             </div>
@@ -113,10 +128,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Filet de turbot</h4>
+                                    <h4 class="text__title">Côte de bœuf Angus</h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt txt">Aux agrumes</p>
+                                    <p class="text__txt txt">Et sa purée de panais</p>
                                     <p class="price__text">44€</p>
                                 </div>
                             </div>
@@ -133,10 +148,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Paris-Brest</h4>
+                                    <h4 class="text__title">Farandole de desserts</h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt txt">Revisité</p>
+                                    <p class="text__txt txt">Du chef</p>
                                     <p class="price__text">18€</p>
                                 </div>
                             </div>
@@ -147,11 +162,11 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Macaron au chocolat d'exception </h4>
+                                    <h4 class="text__title">Crème brulée</h4>
                                     
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt txt">Et glace à la vanille de Madagascar</p>
+                                    <p class="text__txt txt">Revisitée</p>
                                     <p class="price__text">22€</p>
                                 </div>
                             </div>
@@ -162,10 +177,10 @@
                         <article class="cards__card card">
                             <div class="card__content content">
                                 <div class="content__text text">
-                                    <h4 class="text__title">Mousse au chocolat </h4>
+                                    <h4 class="text__title">Tiramisu</h4>
                                 </div>
                                 <div class="content__price price">
-                                    <p class="text__txt txt">Au piment d'Espelette et à la truffe noire</p>
+                                    <p class="text__txt txt">À la noisette</p>
                                     <p class="price__text">23€</p>
                                 </div>
                             </div>

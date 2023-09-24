@@ -164,12 +164,38 @@ main {
 @media (min-width: 768px) {
   .restaurant .informations {
     justify-content: center;
-    gap: 50px;
+    gap: 150px;
   }
 }
 .restaurant .informations__title {
   font-size: 28px;
   margin: 0;
+}
+.restaurant .informations__icon {
+  position: relative;
+}
+.restaurant .informations__icon .heart-full, .restaurant .informations__icon .heart-empty {
+  position: absolute;
+  right: -10%;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+}
+.restaurant .informations__icon .heart-full {
+  opacity: 0;
+  transition: all 0.7s linear 0s;
+  fill: url(#Gradient);
+}
+.restaurant .informations__icon .heart-full:hover {
+  opacity: 1;
+}
+.restaurant .informations__icon .stop1 {
+  stop-color: #9356DC;
+  stop-opacity: 1;
+}
+.restaurant .informations__icon .stop2 {
+  stop-color: #FF79DA;
+  stop-opacity: 1;
 }
 .restaurant__cards {
   display: flex;
@@ -341,6 +367,7 @@ main {
 }
 .restaurant__button-btn:active {
   background: linear-gradient(180deg, #FF79DA 50%, #9356DC);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 @keyframes slide {

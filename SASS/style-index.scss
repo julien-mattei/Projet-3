@@ -32,7 +32,7 @@
     text-align: center;
     background: #f6f6f6;
     gap: 15px;
-    padding: 40px 20px;
+    padding: 50px 20px;
 
     &__title {
         margin: 0;
@@ -50,6 +50,7 @@
 
     &__button:active {
         background: $gradient-light;
+        box-shadow: 0 4px 15px 0 rgb(0, 0, 0, 0.50);
     }
 }
 
@@ -67,6 +68,7 @@
     &__pannels {
         @include flex-container-column();
         gap: 30px;
+        padding-left: 15px;
 
         @media (min-width: 1440px) {
             @include flex-container-row();
@@ -101,7 +103,7 @@
 .restaurants {
     @include flex-container-column();
     background: #f6f6f6;
-    padding: 50px 15px;
+    padding: 50px 20px;
     
 
     @media (min-width: 1440px) {

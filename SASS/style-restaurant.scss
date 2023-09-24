@@ -61,13 +61,46 @@ main {
 
         @media (min-width: 768px) {
             justify-content: center;
-            gap: 50px;
+            gap: 150px;
         }
 
         &__title {
             font-size: 28px;
             margin: 0;
         }
+
+        &__icon {
+            position: relative;
+
+            .heart-full, .heart-empty {
+                position: absolute;
+                right: -10%;
+                top: -15px;
+                width: 30px;
+                height: 30px;
+            }
+    
+            .heart-full {
+                opacity: 0;
+                transition: all 0.7s linear 0s;
+                fill: url(#Gradient);
+            }
+    
+            .heart-full:hover{
+                opacity: 1;
+            }
+    
+            .stop1 {
+                stop-color: $purplebgcrircle;
+                stop-opacity: 1;
+            }
+        
+            .stop2 {
+                stop-color: #FF79DA;
+                stop-opacity: 1;
+            }
+        }
+        
     }
 
     &__cards {
@@ -251,6 +284,7 @@ main {
 
     &__button-btn:active {
         background: $gradient-light;
+        box-shadow: 0 4px 15px 0 rgb(0, 0, 0, 0.50);
     }
 }
 
