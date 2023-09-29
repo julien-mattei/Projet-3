@@ -15,10 +15,10 @@ Le but du projet est de faire un site responsive en mobile first tout en créant
 
 - Pour la page d'accueil :
   - un loader avant l'affichage de la page
-    - une animation sur le coeur pour mettre un restaurant en favori
+  - une animation sur le coeur pour mettre un restaurant en favori
     
-  - Pour les pages des menus :
-    - faire apparaitre les éléments du menu au fur et mesure quand on est sur la page.
+- Pour les pages des menus :
+  - faire apparaitre les éléments du menu au fur et mesure quand on est sur la page.
 
 - Le site Ohmyfood
 
