@@ -12,6 +12,7 @@ Pour réaliser le site ohmyfood, il fallait suivre un [brief créatif](https://c
 Il fallait respecter la maquette du site disponible sur Figma. 
 
 Le but du projet est de faire un site responsive en mobile first tout en créant des animations sur la page d'accueil et sur les pages des menus de chaque restaurant.
+
     - Pour la page d'accueil :
         - un loader avant l'affichage de la page
         - une animation sur le coeur pour mettre un restaurant en favori
