@@ -1,10 +1,23 @@
 # 1. Ohmyfood
 
-- Presentation du projet
+- Présentation du projet
+
+En tant que développeur junior depuis peu chez Ohmyfood, une jeune start-up qui souhaite se faire une place sur le marché de la restauration. Il m'a été confié comme projet de développer leur site web en France car ils sont déjà présent aux États-Unis.
+
 
 - Les consignes
 
-Pour réaliser le site ohmyfood, il fallait suivre un brief créatif disponible [ici](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Brief+creatif+site+Ohmyfood.pdf) et un guide des étapes clés disponible aussi [ici](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Guide+d%E2%80%99etapes+cles+-+OhMyFood.pdf).
+Pour réaliser le site ohmyfood, il fallait suivre un [brief créatif](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Brief+creatif+site+Ohmyfood.pdf) et [un guide des étapes clés](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Guide+d%E2%80%99etapes+cles+-+OhMyFood.pdf).
+
+Il fallait respecter la maquette du site disponible sur Figma. 
+
+Le but du projet est de faire un site responsive en mobile first tout en créant des animations sur la page d'accueil et sur les pages des menus de chaque restaurant.
+    - Pour la page d'accueil :
+        - un loader avant l'affichage de la page
+        - une animation sur le coeur pour mettre un restaurant en favori
+    
+    - Pour les pages des menus :
+        - faire apparaitre les éléments du menu au fur et mesure quand on est sur la page.
 
 - Le site Ohmyfood
 
