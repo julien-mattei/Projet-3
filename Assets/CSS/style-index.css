@@ -369,7 +369,7 @@ a {
   border-radius: 50%;
   height: 25px;
   width: 25px;
-  background-color: black;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
 .dot:nth-child(1) {
