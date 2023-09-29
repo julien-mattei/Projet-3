@@ -13,12 +13,16 @@ Il fallait respecter la maquette du site disponible sur Figma.
 
 Le but du projet est de faire un site responsive en mobile first tout en créant des animations sur la page d'accueil et sur les pages des menus de chaque restaurant.
 
-    - Pour la page d'accueil :
-        - un loader avant l'affichage de la page
-        - une animation sur le coeur pour mettre un restaurant en favori
+- Pour la page d'accueil :
+  - un loader avant l'affichage de la page
+  - une animation sur le coeur pour mettre un restaurant en favori
+- Pour la page d'accueil :
+  - un loader avant l'affichage de la page
+  - une animation sur le coeur pour mettre un restaurant en favori
+
     
-    - Pour les pages des menus :
-        - faire apparaitre les éléments du menu au fur et mesure quand on est sur la page.
+- Pour les pages des menus :
+  - faire apparaitre les éléments du menu au fur et mesure quand on est sur la page.
 
 - Le site Ohmyfood
 
